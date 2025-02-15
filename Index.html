@@ -1,11 +1,321 @@
 <!DOCTYPE html>
+<!--tells browser you are using HTML5-->
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--root of an html document-->
+
+  <head>
+    <!--container for metadata-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice HTML</title>
-</head>
-<body>
-    <h1>this is prince kumar</h1>
-</body>
+    <!--Title tag is used to add title of html page-->
+  </head>
+
+  <body>
+    <!--contains all data rendered by browser-->
+
+    <h1>This is a heading</h1>
+    <!--<h1> tag is used to display heading in html-->
+
+    <h1>Heading1</h1>
+    <!--most important-->
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <h4>Heading4</h4>
+    <h5>Heading5</h5>
+    <h6>Heading6</h6>
+    <!--least important-->
+
+    <hr />
+    <a href="https://www.google.com" target="_main">Google</a>
+    <!--It is used to add link to your page-->
+    <br />
+    <a href="https://bit.ly/4gNyxfb" target="_blank">Portfolio</a
+    ><!--Absolute url-->
+    <br />
+    <a href="/hello.html">Go to hello page</a
+    ><!--Relative url-->
+    <br />
+    <hr />
+
+    <img
+      src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk="
+      alt="Sunrise Image"
+    /><!--absolute url-->
+    <hr />
+
+    <!---------------------------Bold/Italic/Underline--------------------------------------->
+    <b>Bold tag</b
+    ><!--Bold-->
+    <br />
+    <i>Italic tag</i>
+    <!--Italic-->
+    <br />
+    <u>Underline tag</u
+    ><!--underline-->
+    <br />
+    <hr />
+    <p>
+      <u>Lorem ipsum dolor, sit amet consectetur adipisicing</u> elit. Impedit
+      debitis aut quasi inventore facere aperiam ea explicabo praesentium libero
+      assumenda excepturi illo.
+    </p>
+    <hr />
+    <br />
+
+    <big>this tag show big text</big
+    ><!--Big tag is used to display big text on your page-->
+    <br />
+    <small>this tag show small text</small
+    ><!--Small tag is used to display small text on your page-->
+    <hr />
+
+    <h1>H<sub>2</sub>O</h1>
+    <!--subscript tag-->
+    <h1>A <sup>2</sup>+ B</h1>
+    <!--superscript tag-->
+    <hr />
+
+    <p>
+      Lorem ipsum dolor sit amet,consectetur adipisicing elit. Suscipit maxime
+      eveniet voluptas tempora id sit, enim molestias porro at obcaecati!
+    </p>
+    <!--p tag is also used to display text with ignoring spaces & nextline-->
+
+    <pre>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit consequatur quia voluptatem tempore iusto eos neque laudantium ratione unde magni voluptatibus distinctio, odio aperiam dolore autem quod officia debitis perspiciatis?
+    </pre>
+    <!--pre tag is used to display text as it is(without ignoring spaces & nextline)-->
+
+    <!------------------using sementic tags for layout------------------------->
+
+    <header>Education Skills Projects</header>
+
+    <main>
+      <section>Education :Graduate</section>
+
+      <section>Skills :Html, Css, javascript</section>
+
+      <article>My story!</article>
+
+      <aside>This is ads</aside>
+      <!--The <aside> tag is detected by SEO but its content is typically given less priority compared to main content. Search engines understand <aside> as supplementary content, such as sidebars, ads, or related links-->
+
+      <div>this is div</div>
+      <!--Div tag is a container used for other html elements-->
+      <hr />
+
+      <!-----------------------unorder list-------------------------------->
+      <ul style="list-style-type: decimal">
+        <li>Prince kumar singh</li>
+        <!--lists are used to represent real life list data-->
+
+        <ul>
+          <!--unordered list is used to display text with bullet points instead of numbers-->
+          <li>Age : 21</li>
+          <li>Prn : 2228100032</li>
+        </ul>
+        <li>Sumit kumar singh</li>
+        <ul>
+          <li>Age : 25</li>
+          <li>Prn : 2728100762</li>
+        </ul>
+        <li>Piyush kumar singh</li>
+        <ul>
+          <li>Age : 21</li>
+          <li>Prn : 222810002</li>
+        </ul>
+        <li>Karan kumar singh</li>
+      </ul>
+      <hr />
+
+      <!----------------------------ordered list------------------------>
+      <ol>
+        <!--ordered list is used to display text with sequence numbers -->
+        <li>Apple</li>
+        <ol>
+          <li>Color : red</li>
+          <li>Season : winters</li>
+        </ol>
+        <li>Mango</li>
+        <ol>
+          <li>Color : yellow</li>
+          <li>Season :summers</li>
+        </ol>
+        <li>Litchi</li>
+      </ol>
+
+      <!--------------------------table--------------------------->
+
+      <table
+        border="2"
+        style="text-align: center; justify-content: center; align-items: center"
+      >
+        <!--table tag is used to represent real life table data-->
+
+        <thead>
+          <!--<thead> tag is used to wrap table header-->
+          <caption>
+            <!--caption tag is used to provide a title or description for a table-->
+          </caption>
+          <tr>
+            <!--<tr> tag is used to display table row-->
+            <th>Name</th>
+            <!--<th> tag is used to display table header-->
+            <th>Age</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!--<tbody> tag is used to wrap table body-->
+          <tr>
+            <td>Prince kumar singh</td>
+            <!--<td> tag is used to display table data-->
+            <td>22</td>
+            <td>2228100032</td>
+          </tr>
+          <tr>
+            <td>Sumit kumar singh</td>
+            <td>25</td>
+            <td>2228001071</td>
+          </tr>
+          <tr>
+            <td>Piyush kumar singh</td>
+            <td>23</td>
+            <td>2228101022</td>
+          </tr>
+          <tr>
+            <td>vikash kumar singh</td>
+            <td>24</td>
+            <td>223200543</td>
+          </tr>
+          <tr>
+            <td colspan="2">Total</td>
+            <!--colspan attribute is used to create cells which spans over multiple columns -->
+            <td>433584854484</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <br />
+    <hr />
+
+    <form action="/action.php">
+      <!--Forms are used to collect data from the user (eg:-sign up/login/help requests/contact me)-->
+      <label>
+        Enter Username:
+        <input type="text" placeholder="Enter Username" />
+      </label>
+      <br />
+      <br />
+      <label
+        ><!--label tag is used to associate a text description with input elements-->
+        Enter Password:
+        <input
+          type="password"
+          placeholder="Enter Password"
+        /><!--<input> tag is used to create interactive form elements (like text fields, checkboxes, radio buttons, and more)-->
+      </label>
+      <br />
+      <br />
+      <div>Select your class</div>
+      <br />
+
+      <label for="id5">
+        <input type="radio" value="class X" name="class" id="id5" />Class X
+      </label>
+      <label for="id6">
+        <input type="radio" value="class XI" name="class" id="id6" /> Class XI
+      </label>
+      <br />
+      <br />
+      <div>Select for subjects</div>
+      <br />
+      <label for="id1">
+        <input type="checkbox" value="Math" name="class" id="id1" />Math
+      </label>
+      <br />
+      <label for="id2">
+        <input type="checkbox" value="physics" name="class" id="id2" />physics
+      </label>
+      <br />
+      <label for="id3">
+        <input
+          type="checkbox"
+          value="chemistry"
+          name="class"
+          id="id3"
+        />chemistry
+      </label>
+      <br />
+      <label for="id4">
+        <input
+          type="checkbox"
+          value="Social Science"
+          name="class"
+          id="id4"
+        />Social Science
+      </label>
+      <br />
+      <br />
+      <!--textarea is used to create a multi-line text input field for users to enter longer text-->
+      <textarea
+        name="feedback"
+        id="101"
+        placeholder="Please Give your valuable feedback here"
+      ></textarea>
+      <br />
+
+      <select name="city" id="city">
+        <!--select tag is used to create dropdown menu , allowing users to choose from multiple options-->
+        <option value="Delhi">Delhi</option>
+        <!--option tag is used inside a select tags to define individual choices in a dropdown menu-->
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Maharastra">Maharastra</option>
+      </select>
+      <br />
+      <br />
+
+      <input type="submit" value="submit" name="submit" />
+      <br />
+      <br />
+
+      <iframe
+        width="460"
+        height="215"
+        src="https://www.youtube.com/embed/HcOc7P5BMi4?si=DFeS67yokDBlFUZh"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <!--iframe tag is used to add website inside your website-->
+      <br />
+
+      <iframe
+        width="460"
+        height="215"
+        src="https://www.wikipedia.org/"
+        frameborder="0"
+      ></iframe>
+      <br />
+
+      <video
+        width="460"
+        height="215"
+        src="https://youtu.be/mOu_zBiFi5U?si=iRL0or9NSZK2AQmc"
+        controls
+        autoplay
+        muted
+      ></video>
+      <!--Video tag is used to add video in own page-->
+      <br />
+
+      <audio src="/audio.mp3" controls></audio>
+    </form>
+  </body>
 </html>
