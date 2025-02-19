@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos - HTML</title>
+  </head>
+  <body>
+    <!-----------First Way-------------->
+    <video src="/motivation.mp4" controls autoplay muted loop>
+      motivation video
+    </video>
+    <!--Modern browsers restrict videos from autoplaying unless they are muted. If you want a video to autoplay in HTML, you must include both the autoplay and muted attributes. -->
+
+    <!-----------------Second way--------------------->
+    <video width="640" autoplay loop muted>
+      <!--if you use source tag inside video tag then you will not have to write controls attributes-->
+      <source src="/motivation.mp4" type="video/mp4" />
+      <!--you must be write type = "video/mp4" then it will work properly if you are not write this then your video will not display -->
+      motivation video here
+    </video>
+  </body>
+</html>

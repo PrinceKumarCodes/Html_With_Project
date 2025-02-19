@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table's data</title>
+    <style>
+      table {
+        width: 60%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        padding: 12px;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #4caf50;
+        color: white;
+        font-weight: bold;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tfoot td {
+        background-color: #333;
+        color: white;
+        font-weight: bold;
+      }
+
+      tfoot td[colspan="2"] {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Sr No</th>
+          <th>Name</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Prince kumar singh</td>
+          <td>340000000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Sumit kumar singh</td>
+          <td>4000000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Hujaifa kumar singh</td>
+          <td>4500000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" style="text-align: center">Total</td>
+          <td>76540000000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
