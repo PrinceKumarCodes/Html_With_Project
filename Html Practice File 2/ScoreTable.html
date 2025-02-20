@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket score</title>
+    <style>
+      /* General Styling */
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      table {
+        width: 80%;
+        max-width: 600px;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+
+      thead {
+        background: #007bff;
+        color: white;
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tbody tr:nth-child(even) {
+        background: #f8f9fa;
+      }
+
+      tbody tr:hover {
+        background: #e9ecef;
+        transition: 0.3s ease-in-out;
+      }
+
+      th {
+        text-transform: uppercase;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 600px) {
+        table {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Match</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Virat kohli</td>
+          <td>34</td>
+          <td>IPL 2024</td>
+        </tr>
+        <tr>
+          <td>Rohit sharma</td>
+          <td>75</td>
+          <td>IPL 2024</td>
+        </tr>
+        <tr>
+          <td>Manish panday</td>
+          <td>56</td>
+          <td>IPL 2023</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
