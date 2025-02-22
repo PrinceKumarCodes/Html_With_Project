@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html - Form</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <form action="">
+                <h1>Event Registration</h1>
+                <div>
+                    <label for="name">Name:</label>
+                    <br />
+
+                    <input type="text" placeholder="Enter name" id="name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br />
+
+                    <input type="email" name="email" placeholder="Enter email" id="email">
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <br />
+                    <input type="tel" placeholder="Enter phone no" id="phone">
+                </div>
+                <div>
+                    <h3>Occupation:</h3>
+                    <select name="occupation" id="occupation">
+                        <option value="" disabled selected>Choose occupation</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Topics of Interest:</h3>
+
+                    <input type="checkbox" name="html" id="html">
+                    <label for="html">HTML</label>
+                    <br>
+
+                    <input type="checkbox" name="css" id="css">
+                    <label for="css">CSS</label>
+                    <br>
+                    <input type="checkbox" name="js" id="js">
+                    <label for="js">Javascript</label>
+                </div>
+                <div>
+                    <h3>Comment:</h3>
+
+                    <textarea name="comments" id="comments" placeholder="Give me a valuable feadback" rows="6"
+                        cols="20"></textarea>
+                </div>
+                <div>
+
+                    <input type="button" value="Register">
+                    <!-- <button>Register</button> -->
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

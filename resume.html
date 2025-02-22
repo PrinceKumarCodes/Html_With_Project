@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince's resume</title>
+
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            width: 100%;
+            background: transparent;
+            color: black;
+            padding: 15px 10px;
+            position: absolute;
+            top: 0px;
+            position: fixed;
+        }
+
+        header section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        #logo img {
+            border-radius: 50px;
+            margin: 0px;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .Hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 20px auto;
+            margin-top: 80px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        ul {
+            list-style: square;
+            margin-left: 20px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                display: none;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .Hamburger {
+                display: block;
+            }
+
+            table,
+            tbody,
+            tr,
+            td {
+                display: block;
+                width: 100%;
+            }
+
+            table img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header part  -->
+    <header>
+        <section>
+            <div id="logo">
+                <img src="princeImage.jpg" alt="img" width="30px">
+            </div>
+            <nav>
+                <span class="Hamburger">Hamburger</span>
+                <ul>
+                    <li><a href="#contactSection">Home</a></li>
+                    <li><a href="#aboutSection">About</a></li>
+                    <li><a href="#aducationSection">Aducation</a></li>
+                    <li><a href="#experianceSection">Experiance</a></li>
+                    <li><a href="#skillSection">Skills</a></li>
+                    <li><a href="#achievementSection">Achievement</a></li>
+                    <li><a href="#projectSection">Projects</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+    <!-- Main part  -->
+    <main>
+
+        <!-- Contact section  -->
+        <section id="contactSection">
+            <div>
+                <h1>Prince kumar </h1>
+                <p>Contact: <a href="#">princekumarcbcs2022@gmail.com</a></p>
+                <p>Linkedin: <a href="#">linkedin.com/in/princekumar</a></p>
+                <p>Github: <a href="#">Github.com/princekumar</a></p>
+            </div>
+        </section>
+
+        <!-- About section  -->
+        <section id="aboutSection">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="/princeImage.jpg" alt="Image" height="100px">
+                        </td>
+
+                        <td>
+                            <p>
+                                I am a passionate software engineer with expertise in problem-solvtng and algonthnuc
+                                thinking. I
+                                love to explore vanous
+                                technologies and frameworks to develop ettic.cnt and scalable solutions, With a strong
+                                foundation in data structures and algorithms, I strive to create robust and optimized
+                                code.
+                                I am
+                                constantly expanding my
+                                skills and staying up-to-date with the latest advancements in the field of software
+                                devel
+                                nt.
+                            </p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- Aducation section  -->
+        <section id="aducationSection">
+            <div>
+                <h1>Ecucation</h1>
+                <ul>
+                    <li>
+                        Vachelor of Technology in Information Technology, Netaji Subhas Institute ot- Technology.
+                    </li>
+                    <li>
+                        -E.S N .T Rama Rao Memorial Senior Secondary School
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experiance section  -->
+        <section id="experianceSection">
+            <div>
+                <h1>Work Experiance</h1>
+
+                <div>
+                    <h3>Software engineer, Microsoft</h3>
+                    <p>
+                        Nov 2021 - May 2022
+                    </p>
+                    <ul>
+                        <li>
+                            Develovrd and maintained web applications using HTML, CSS. and JavaScript
+                        </li>
+                        <li>
+                            Collaborated with cross-functional teams to design and implement software solutions
+                        </li>
+                        <li>
+                            Optimized code performance and improved application efficiency
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h3>Software Development Engineer, Amazon</h3>
+                    <p>July 2019 - October 2021</p>
+                    <ul>
+                        <li>
+                            Assisted tn developmg and testing software modules
+                        </li>
+                        <li>
+                            Worked on bug fixing and performance enhancement tasks
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills section  -->
+        <section id="skillSection">
+            <div>
+                <h1>Skills</h1>
+                <ul>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Achievements section  -->
+        <section id="AchievementSection">
+            <div>
+                <h1>Achievements</h1>
+                <ul>
+                    <li>
+                        Service Selection Board(Recommendation letter for Otticer entry in Indian Army)
+                    </li>
+                    <li>
+                        blished an article on data structures in a renowned tech magazine
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Project section  -->
+        <section id="projectSection">
+            <div>
+                <h1>Projects</h1>
+                <ul>
+                    <li>
+                        <h3> Library Management system</h3>
+                        <p>Library Management Application — developed a desktop application by using java swing and
+                            MYSQL server.</p>
+                        <p>Hosted Link: <a href="#">example.com/ecommerce</a></p>
+                        <p>GitHub Link: <a href="#">github.com/princekumar/ecommere</a></p>
+                    </li>
+
+                    <li>
+                        <h3>Friendly Chat AppFriendly</h3>
+                        Hosted Link: uamplg..gunLhlog
+                        GitHub Link: giLhuh..comL.lQ.ychahhaELhlgg
+                        <p>
+                            Friendly Chat — An Android application making use of firebase, to help people connect and
+                            chat
+                            by sending messages and images, also having login options.
+                        </p>
+                        <p>Hosted link: <a href="#">example.com/blog</a></p>
+                        <p>Github link: <a href="#">github.com/princekumar/blog</a></p>
+                    </li>
+
+                    <li>
+                        <h3>Secure Messenger AppSecure</h3>
+                        <p>
+                            Secure Messenger App — An Android application to have secure
+                            sender and recipient. using a number of cryptography algorithm
+                            for encryption and decryption.
+                        </p>
+                        <p>Hosted link: <a href="#">example.com/dashboard</a></p>
+                        <p>Github link: <a href="#">github.com/princekumar/dashboard</a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Frequently Asked Questions section -->
+        <section>
+            <details>
+                <summary>Question 1: What is your name </summary>
+                <p>My name is prince kumar</p>
+            </details>
+
+            <details>
+                <summary>Question 2: What is your father's name</summary>
+                <p>My father's name is manoj singh</p>
+            </details>
+
+            <details>
+                <summary>Question 3: What is your mother's name</summary>
+                <p>My mother's name is phulkumari devi</p>
+            </details>
+
+            <details>
+                <summary>Question 4: what's your highest qualification</summary>
+                <p>Graduation(stream-computer science) </p>
+            </details>
+
+        </section>
+
+    </main>
+
+    <!-- footer part -->
+    <footer>
+        <section>
+            <div>
+                &copy; 2025 Prince kumar | All right reserved.
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

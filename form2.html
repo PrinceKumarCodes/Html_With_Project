@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Forms</title>
+</head>
+
+<body>
+    <h2>Job application</h2>
+
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" placeholder="Enter name" id="name">
+    <br />
+    <label for="email">Email:</label>
+    <br />
+    <input type="email" placeholder="Enter email" id="email">
+    <br />
+    <label for="phone">Phone:</label>
+    <br />
+    <input type="tel" placeholder="Enter phone" id="phone">
+    <br />
+    <br />
+    <label for="fileUpload">Upload:</label>
+    <br />
+    <input type="file" id="fileUpload">
+    <br />
+    <br />
+    <label for="counter">Experience ( in years)</label>
+    <br />
+    <input type="number" min="0" max="50">
+    <br />
+    <br />
+    <fieldset>
+        <legend>Skills</legend>
+        <input type="checkbox" name="checkbox" id="checkbox1">
+        <label for="checkbox1 ">HTML</label>
+        <br />
+        <input type="checkbox" name="checkbox" id="checkbox2">
+        <label for="checkbox2">CSS</label>
+        <br />
+        <input type="checkbox" name="checkbox" id="checkbox3">
+        <label for="checkbox3">Javascript</label>
+    </fieldset>
+    <br />
+
+    <label for="educationtype">Highest education</label>
+    <br />
+    <br />
+    <select name="educationtype" id="educationtype">
+        <option value="hight school">High school</option>
+        <option value="associate's digree">Associate's degree</option>
+        <option value="bachlor's digree">Bachlor's degree</option>
+        <option value="master's digree">Master's degree</option>
+    </select>
+
+    <br />
+    <br />
+    <label for="availability">Avialability</label>
+    <br />
+    <input type="radio" name="radio" id="availability">
+    <label for="availability">Full-time</label>
+    <br />
+    <input type="radio" name="radio" id="availability1">
+    <label for="availability1">Part-time</label>
+
+
+    <br />
+    <br />
+    <label for="feadback">Additional comments:</label>
+    <br />
+    <textarea name="feadback" id="feadback" placeholder="Give me valuable feadback" rows="8" cols="20"></textarea>
+    <br />
+    <input type="submit" value="Submit application">
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex form</title>
+</head>
+
+<body>
+    <form action="">
+
+        <h3>Complex Form</h3>
+        <fieldset>
+            <legend>Personal information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter name" id="name">
+            <br />
+            <br />
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Enter email" id="email">
+            <br />
+            <br />
+            <label for="phone">Phone:</label>
+            <input type="tel" placeholder="Enter phone no" id="phone">
+            <br />
+            <br />
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date">
+            <br />
+            <br />
+            <label for="gender">Gender:</label>
+            <br />
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="others">
+            <label for="others">Others</label>
+            <br />
+            <br />
+            <label for="">Country:</label>
+            <select name="country" id="country">
+                <option value="" disabled selected>---Choose country---</option>
+                <option value="india">India</option>
+                <option value="us">United State</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="japan">Japan</option>
+                <option value="brazil">Brazil</option>
+
+            </select>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+            <legend>Address</legend>
+            <label for="address-street">street:</label>
+            <input type="text" placeholder="Enter address" id="address-street">
+            <br />
+            <br />
+            <label for="city">City:</label>
+            <input type="text" placeholder="Enter city" id="city">
+            <br />
+            <br />
+            <label for="state">State:</label>
+            <input type="text" placeholder="Enter state" id="state">
+            <br />
+            <br />
+            <label for="zip-code">Zip code: </label>
+            <input type="text" id="zip-code">
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+            <legend>Other information</legend>
+            <label for="comment">Comments:</label>
+            <br />
+            <textarea name="feadback" id="" rows="8" cols="25" placeholder="Write here a valuable feadback"></textarea>
+            <br />
+            <input type="checkbox" name="checkcondition" id="checkcondition">
+            <label for="checkcondition">I agree to the terms of service</label>
+            <br />
+        </fieldset>
+        <br />
+
+        <input type="button" value="Submit">
+
+    </form>
+</body>
+
+</html>
