@@ -1,138 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travelstud.com , Book your travel to manali</title>
 
-    <style>
-      /* General Styling */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelstud.com , Book your travel to manali</title>
 
-      body {
-        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        padding: 20px;
-      }
-      form {
-        padding: 20px 10px;
-        background: white;
-        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-      }
+  <style>
+    /* General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
 
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+    }
+
+    form {
+      padding: 20px 10px;
+      background: white;
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    div {
+      background: white;
+      padding: 5px 25px;
+      border-radius: 0px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      width: 380px;
+      max-width: 100%;
+    }
+
+    div:hover {
+      border-left: 3px solid #32a1ce;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    /* Form Styling */
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #ddd;
+      outline: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    /* Button Styling */
+    button {
+      width: 100%;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #ff5f7e, #ff6ea5);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
       div {
-        background: white;
-        padding: 5px 25px;
-        border-radius: 0px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        width: 380px;
-        max-width: 100%;
-      }
-      div:hover {
-        border-left: 3px solid #32a1ce;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-      }
-
-      /* Form Styling */
-      label {
-        font-weight: 600;
-        display: block;
-        margin-bottom: 5px;
-        color: #333;
-      }
-
-      input,
-      textarea {
         width: 100%;
-        padding: 10px;
-        border: 2px solid #ddd;
-        border-radius: 5px;
-        font-size: 14px;
-        transition: 0.3s;
       }
+    }
+  </style>
+</head>
 
-      input:focus,
-      textarea:focus {
-        border-color: #ddd;
-        outline: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+<body>
+  <form action="/submit.php">
+    <div>
+      <label for="Destination">Travel Booking Form</label>
+      <input type="text" placeholder="From" id="from" />
+      <br />
+      <br />
+      <input type="text" placeholder="To" id="Destination" />
+    </div>
+    <div>
+      <label for="name">Name</label>
+      <input type="text" placeholder="Enter your name" id="name" />
+    </div>
+    <div>
+      <label for="age">Age</label>
+      <input type="number" placeholder="Enter your age" id="age" />
+    </div>
+    <div>
+      <label for="phoneno">Phone</label>
+      <input type="tel" placeholder="Enter your phone " id="phoneno" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" placeholder="Enter your email" id="email" />
+    </div>
+    <div>
+      <label for="add">Address</label>
+      <textarea name="address" id="add" rows="4"></textarea>
+    </div>
+    <div>
+      <button type="submit">submit</button>
+    </div>
+  </form>
+</body>
 
-      textarea {
-        resize: none;
-      }
-
-      /* Button Styling */
-      button {
-        width: 100%;
-        background: linear-gradient(135deg, #ff758c, #ff7eb3);
-        color: white;
-        border: none;
-        padding: 12px;
-        font-size: 16px;
-        font-weight: bold;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-top: 10px;
-      }
-
-      button:hover {
-        background: linear-gradient(135deg, #ff5f7e, #ff6ea5);
-      }
-
-      /* Responsive Design */
-      @media (max-width: 480px) {
-        div {
-          width: 100%;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <form action="/submit.php">
-      <div>
-        <label for="Destination">Travel Booking Form</label>
-        <input type="text" placeholder="From" id="from" />
-        <br />
-        <br />
-        <input type="text" placeholder="To" id="Destination" />
-      </div>
-      <div>
-        <label for="name">Name</label>
-        <input type="text" placeholder="Enter your name" id="name" />
-      </div>
-      <div>
-        <label for="age">Age</label>
-        <input type="number" placeholder="Enter your age" id="age" />
-      </div>
-      <div>
-        <label for="phoneno">Phone</label>
-        <input type="tel" placeholder="Enter your phone " id="phoneno" />
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" placeholder="Enter your email" id="email" />
-      </div>
-      <div>
-        <label for="add">Address</label>
-        <textarea name="address" id="add" rows="4"></textarea>
-      </div>
-      <div>
-        <button type="submit">submit</button>
-      </div>
-    </form>
-  </body>
 </html>
