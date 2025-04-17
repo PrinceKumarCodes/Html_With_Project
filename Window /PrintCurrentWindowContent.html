@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Info Example</title>
+</head>
+<body>
+  <h1>Check the Console for Page Info</h1>
+
+  <script>
+    function get_current_page() {
+      return window.location.href;
+    }
+    function get_current_page_title() {
+      return document.title;
+    }
+    function get_current_page_url() {
+      return window.location.href;
+    }
+    function get_current_page_domain() {
+      return window.location.hostname;
+    }
+    function get_current_page_protocol() {
+      return window.location.protocol;
+    }
+    function get_current_page_port() {
+      return window.location.port;
+    }
+    function get_current_page_pathname() {
+      return window.location.pathname;
+    }
+    function get_current_page_search() {
+      return window.location.search;
+    }
+    function get_current_page_hash() {
+      return window.location.hash;
+    }
+    function get_current_page_referrer() {
+      return document.referrer;
+    }
+    function get_current_page_cookie() {
+      return document.cookie;
+    }
+    function get_current_page_local_storage() {
+      return window.localStorage;
+    }
+    function get_current_page_session_storage() {
+      return window.sessionStorage;
+    }
+    function get_current_page_history() {
+      return window.history;
+    }
+    function get_current_page_screen() {
+      return window.screen;
+    }
+    function get_current_page_window() {
+      return window.window;
+    }
+
+    // 👇 Print function that uses all of the above
+    function print_current_page() {
+      console.log("Page:", get_current_page());
+      console.log("Title:", get_current_page_title());
+      console.log("URL:", get_current_page_url());
+      console.log("Domain:", get_current_page_domain());
+      console.log("Protocol:", get_current_page_protocol());
+      console.log("Port:", get_current_page_port());
+      console.log("Pathname:", get_current_page_pathname());
+      console.log("Search Params:", get_current_page_search());
+      console.log("Hash:", get_current_page_hash());
+      console.log("Referrer:", get_current_page_referrer());
+      console.log("Cookies:", get_current_page_cookie());
+      console.log("Local Storage:", get_current_page_local_storage());
+      console.log("Session Storage:", get_current_page_session_storage());
+      console.log("History Object:", get_current_page_history());
+      console.log("Screen Info:", get_current_page_screen());
+      console.log("Window Object:", get_current_page_window());
+    }
+
+    // 🔥 Call the print function
+    print_current_page();
+  </script>
+</body>
+</html>
